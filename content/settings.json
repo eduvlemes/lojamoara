@@ -1,15 +1,14 @@
 {
-  "store_id": 1052,
-  "name": "My Shop",
-  "domain": "ecomplus-storefront.netlify.app",
-  "short_name": "My Shop",
-  "description": "My PWA Shop",
+  "store_id": 1147,
+  "name": "lojamoara",
+  "domain": "lojamoara.netlify.app",
+  "short_name": "lojamoara",
+  "description": "Somos uma loja física e virtual, que através de produtos de qualidade e com preços acessíveis tem como objetivo elevar a auto estima, estimular o auto cuidado e o amor próprio.",
   "primary_color": "#222831",
   "secondary_color": "#393e46",
   "bg_color": "#ffffff",
   "theme": {
-    "bootswatch": "_",
-    "custom": "_"
+    "bootswatch": "_"
   },
   "logo": "/img/uploads/logo.png",
   "mini_logo": "",
