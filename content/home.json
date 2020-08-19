@@ -7,23 +7,37 @@
       "autoplay": 9000,
       "slides": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z"
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner_moara_frase.jpg"
         },
         {
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
           "start": "",
-          "end": ""
+          "end": "",
+          "img": "/img/uploads/moara-sacola-site-3.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/copia-de-moara-sacola-site.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner_novo_instagram2.jpg",
+          "link": "https://www.instagram.com/MOARAACESSORIOS/"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/copia-de-moara-sacola-site-1.jpg"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner_001.png"
         }
       ]
-    },
-    {
-      "type": "info-bar",
-      "enabled": true
     },
     {
       "type": "collection-shelf",
