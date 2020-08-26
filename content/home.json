@@ -1,5 +1,17 @@
 {
   "meta_title": "",
   "meta_description": "",
-  "sections": []
+  "sections": [
+    {
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "slides": [
+        {
+          "start": "2020-08-26T19:01:10.066Z",
+          "end": "2020-08-26T19:01:10.128Z",
+          "img": "/img/uploads/banner-7-.jpg"
+        }
+      ]
+    }
+  ]
 }
