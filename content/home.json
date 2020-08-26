@@ -63,6 +63,13 @@
           "img": "/img/uploads/copia-de-moara-sacola-site.png"
         }
       ]
+    },
+    {
+      "type": "banner-slider",
+      "autoplay": 9000
+    },
+    {
+      "type": "banners-grid"
     }
   ]
 }
