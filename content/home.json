@@ -24,17 +24,20 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-7-.jpg"
+          "img": "/img/uploads/banner-7-.jpg",
+          "link": "https://lojamoara.com.br/acessoriosv"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/copia-de-moara-sacola-site-18-.png"
+          "img": "/img/uploads/copia-de-moara-sacola-site-18-.png",
+          "link": "https://lojamoara.com.br/petit-moara"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-4-.png"
+          "img": "/img/uploads/banner-4-.png",
+          "link": "https://lojamoara.com.br/inverno-2020"
         }
       ]
     },
