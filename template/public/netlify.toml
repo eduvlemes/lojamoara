@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/_10016/"
-  to = "/u_10016"
+  to = "/"
   status = 301
   force = true
