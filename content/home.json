@@ -42,6 +42,23 @@
       "sort": "lowest_price",
       "title": "Produtos Populares ",
       "headless": true
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/copia-de-moara-sacola-site.png"
+        },
+        {
+          "img": "/img/uploads/copia-de-moara-sacola-site-1-.jpg"
+        },
+        {
+          "img": "/img/uploads/copia-de-moara-sacola-site-18-.png"
+        },
+        {
+          "img": "/img/uploads/moara-sacola-site-3.png"
+        }
+      ]
     }
   ]
 }
