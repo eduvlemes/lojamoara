@@ -1,7 +1,7 @@
 {
   "domain": "lojamoara.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#edb1c7",
+  "primary_color": "#c2708e",
   "theme": {
     "bootswatch": "_",
     "custom": "_"
