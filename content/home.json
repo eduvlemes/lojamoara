@@ -44,6 +44,13 @@
       "headless": true
     },
     {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "sort": "news",
+      "title": "Novidades",
+      "headless": true
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
