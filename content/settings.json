@@ -1,4 +1,5 @@
 {
+  "store_id": 1147,
   "domain": "lojamoara.com.br",
   "currency_symbol": "R$",
   "primary_color": "#c2708e",
@@ -17,7 +18,6 @@
   "country_code": "BR",
   "secondary_color": "#e675a8",
   "icon": "/img/uploads/logo.png",
-  "store_id": 1147,
   "description": "Somos uma loja física e virtual, que através de produtos de qualidade e com preços acessíveis tem como objetivo elevar a auto estima, estimular o auto cuidado e o amor próprio.",
   "large_icon": "/img/uploads/logo.png"
 }
