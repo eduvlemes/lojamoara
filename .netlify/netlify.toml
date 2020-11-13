@@ -1,3 +1,9 @@
+[[redirects]]
+  from = "/_10016/"
+  to = "/"
+  status = 301
+  force = true
+
 [build]
   publish = "publish"
   functions = "functions-zip"
