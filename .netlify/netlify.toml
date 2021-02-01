@@ -3,12 +3,6 @@
   to = "/"
   status = 301
   force = true
-  
-[[redirects]]
-  from = "/*"
-  to = "/pages/manutencao"
-  status = 302
-  force = true
 
 [build]
   publish = "publish"
