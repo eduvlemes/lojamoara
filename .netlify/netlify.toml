@@ -3,6 +3,12 @@
   to = "/"
   status = 301
   force = true
+  
+[[redirects]]
+  from = "/*"
+  to = "https://lojamoara.netlify.app/pages/manutencao"
+  status = 302
+  force = true
 
 [build]
   publish = "publish"
