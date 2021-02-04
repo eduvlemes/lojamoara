@@ -3,48 +3,34 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "banner-slider",
-      "autoplay": 9000,
-      "slides": [
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-7-.jpg",
-          "link": "https://lojamoara.com.br/acessoriosv"
-        }
-      ]
+      "type": "responsive-banner",
+      "img": "/img/uploads/imagem_15.png"
+    },
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/imagem_6.png"
+    },
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/imagem_5.png"
     },
     {
       "type": "collection-shelf",
       "shuffle": true,
       "collection_id": "5f77550b7430f92180f9450a",
       "sort": "lowest_price",
-      "title": "Produtos Populares ",
-      "headless": true
+      "title": "Queridinhos",
+      "headless": false,
+      "limit": 5
     },
     {
       "type": "collection-shelf",
       "shuffle": true,
       "sort": "news",
-      "title": "Novidades",
-      "headless": true
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/copia-de-moara-sacola-site.png"
-        },
-        {
-          "img": "/img/uploads/copia-de-moara-sacola-site-1-.jpg"
-        },
-        {
-          "img": "/img/uploads/copia-de-moara-sacola-site-18-.png"
-        },
-        {
-          "img": "/img/uploads/moara-sacola-site-3.png"
-        }
-      ]
+      "title": "Acabaram de chegar",
+      "headless": false,
+      "limit": 5
     }
+    
   ]
 }

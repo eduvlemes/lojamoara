@@ -1,0 +1,62 @@
+{
+  "collections": [
+    {
+      "label" : "Moara",
+      "name": "moara",
+      "files": [
+        {
+          "name": "moara_banners",
+          "label": "Banners",
+          "file": "content/moara_banners.json",
+          "fields": [
+            {
+              "label":"Banners",
+              "name":"list",
+              "widget" : "list",
+              "fields" : [
+                {
+                  "label": "Item",
+                  "name": "item",
+                  "widget": "object",
+                  "summary" : "",
+                  "fields" : [
+                    {
+                      "label": "Texto",
+                      "name": "text",
+                      "widget": "string"
+                    },
+                    {
+                      "label": "URL de exibição",
+                      "name": "url",
+                      "widget": "string"
+                    },
+                    {
+                      "label": "Banner Principal (Desktop)",
+                      "name": "image_d",
+                      "widget": "image"
+                    },
+                    {
+                      "label": "Banner Principal (Mobile)",
+                      "name": "image_m",
+                      "widget": "image"
+                    },
+                    {
+                      "label": "Banner Secundário (Desktop)",
+                      "name": "image_s_d",
+                      "widget": "image"
+                    },
+                    {
+                      "label": "Banner Secundário (Mobile)",
+                      "name": "image_s_m",
+                      "widget": "image"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

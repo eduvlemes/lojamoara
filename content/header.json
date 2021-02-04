@@ -1,22 +1,23 @@
 {
   "marketing_stripe": {
-    "text": "",
+    "text": "Fim de semana incrível! Ganhe 10% de desconto com o código MOARA10",
     "link": "/promotion"
   },
   "contacts_stripe": {
-    "pages": [
-      {
-        "title": "Sobre nós",
-        "link": "/pages/sobre-nos"
-      }
-    ],
-    "phone_wpp": true,
-    "socials": true
+    "pages": [],
+    "phone_wpp": false,
+    "socials": false
   },
   "categories_list": {
-    "featured": [],
-    "random": 6,
-    "full_width": false
+    "featured":  [
+      "/?Compre Tudo",
+      "/?Acessórios",
+      "/?MakeUp",
+      "/?Brincos",
+      "/?Petit Moara"
+    ],
+    "random": 0,
+    "full_width": true
   },
   "search_input": true
 }

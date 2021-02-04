@@ -7,7 +7,7 @@
     "custom": "_"
   },
   "bg_color": "#ffffff",
-  "logo": "/img/uploads/logo.png",
+  "logo": "/img/uploads/logo.svg",
   "name": "Moara",
   "short_name": "Moara",
   "lang": "pt_br",
@@ -19,5 +19,5 @@
   "icon": "/img/uploads/logo.png",
   "store_id": 1147,
   "description": "Somos uma loja física e virtual, que através de produtos de qualidade e com preços acessíveis tem como objetivo elevar a auto estima, estimular o auto cuidado e o amor próprio.",
-  "large_icon": "/img/uploads/logo.png"
+  "large_icon": "/img/uploads/logo.svg"
 }

@@ -15,7 +15,29 @@ const networksWithColors = [
 %>
 
 <footer class="footer py-3 py-lg-4 py-xl-5">
-  <div class="container">
+  <div class="bg-pink">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4">
+          <div class="footer-frame">
+            <img src="/img/uploads/imagem_14.png" class="img-responsive"/>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Venha dizer oi!</h4>
+          <div class="row">
+            <% footer.stores.list.forEach(({ title, text }) => { %>
+              <div class="col">
+                <b><%- title %></b>
+                <p><%- text %></p>
+              </div>                                  
+            <% }) %>           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid limited">
     <div class="row">
       <div class="col-12 col-lg-auto order-lg-last">
         <div class="footer__contacts">
@@ -29,9 +51,6 @@ const networksWithColors = [
             <% if (footer.contacts.phone_wpp) { %>
               <% if (contacts.whatsapp) { %>
                 <li>
-                  <span class="footer__list-icon">
-                    <i class="fab fa-whatsapp"></i>
-                  </span>
                   <a
                     href="javascript:;"
                     target="_blank"
@@ -45,9 +64,6 @@ const networksWithColors = [
               <% } %>
               <% if (contacts.phone) { %>
                 <li>
-                  <span class="footer__list-icon">
-                    <i class="fas fa-phone"></i>
-                  </span>
                   <a
                     href="tel:+<%= contacts.phone.replace(/\D/g, '') %>"
                     target="_blank"
@@ -65,13 +81,13 @@ const networksWithColors = [
                 </a>
               </li>
             <% } %>
-            <% if (footer.contacts.address) { %>
+            <!-- <% if (footer.contacts.address) { %>
               <li>
                 <address>
                   <%= contacts.address %>
                 </address>
               </li>
-            <% } %>
+            <% } %> -->
           </ul>
 
           <% if (footer.contacts.socials) { %>
@@ -83,7 +99,7 @@ const networksWithColors = [
                     target="_blank"
                     rel="noopener"
                     aria-label="<%= network %>"
-                    style="color: <%= color %>"
+                    style="color: #000"
                   >
                     <i class="fab fa-<%= network %>"></i>
                   </a>
@@ -91,6 +107,18 @@ const networksWithColors = [
               <% }) %>
             </p>
           <% } %>
+          <div class="mt-4 mb-3">
+            <p class="footer__payment-methods">
+              <% Object.keys(footer.payment_methods).forEach(method => { %>
+                <% if (footer.payment_methods[method]) { %>
+                  <i class="pay-icon pay-icon--<%= method %>"></i>
+                <% } %>
+              <% }) %>
+            </p>
+            <div class="footer__stamps">
+              <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -173,49 +201,46 @@ const networksWithColors = [
         </div>
       </div>
 
-      <div class="col-12 col-xl-5 order-lg-first">
-        <h2 class="footer__title footer__store">
-          <%= footer.description.title || _.settings.name %>
-        </h2>
-        <p><%- footer.description.text || _.settings.description %></p>
-
-        <div class="mt-4 mb-3">
-          <p class="footer__payment-methods">
-            <% Object.keys(footer.payment_methods).forEach(method => { %>
-              <% if (footer.payment_methods[method]) { %>
-                <i class="pay-icon pay-icon--<%= method %>"></i>
-              <% } %>
-            <% }) %>
-          </p>
-          <div class="footer__stamps">
-            <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
-          </div>
+      <div class="col-12 col-xl-6 order-lg-first pr-md-5">
+        <div class="pr-md-5 footer__store_info">
+          <h2 class="footer__title footer__store">
+            <img src="/img/uploads/logo.svg"/>
+          </h2>
+          <strong><%- footer.description.title %></strong>
+          <p><%- footer.description.text %></p>
+          <form class="apx-form">
+            <input type="email" placeholder="Seu email_"/>
+            <button type="submit"><img src="/img/uploads/seta.svg"/></button>
+          </form>
         </div>
       </div>
     </div>
 
     <div class="footer__credits">
-      <span>
-        <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
-      </span>
-      <button
-        id="go-to-top"
-        class="btn btn-primary ml-3"
-        type="button"
-        aria-label="<%= _.dictionary('goToTop') %>"
-      >
-        <i class="fas fa-chevron-up"></i>
-      </button>
+      <div>
+        <span>
+          <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
+        </span>
+        <ul class="list-unstyled list-inline">
+          <% footer.links_3.list.forEach(({ url, text }) => { %>
+            <li>
+              <a href="<%= url %>">
+                <%= text %>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      </div>     
+      <div class="ecom-credits">
+        <a href="https://e-com.plus?utm_source=alpix" target="_blank" rel="noopener">
+          <img
+            src="https://ecom.nyc3.digitaloceanspaces.com/brand/plus/198x43.png"
+            alt="E-Com Plus"
+          >
+        </a>
+      </div>
     </div>
   </div>
 </footer>
 
-<div class="ecom-credits">
-  <a href="https://e-com.plus" target="_blank" rel="noopener">
-    Powered by
-    <img
-      src="https://ecom.nyc3.digitaloceanspaces.com/brand/plus/198x43.png"
-      alt="E-Com Plus"
-    >
-  </a>
-</div>
+

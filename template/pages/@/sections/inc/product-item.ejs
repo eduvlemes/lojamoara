@@ -63,7 +63,7 @@ if (imgObj) {
       </div>
     </a>
 
-    <div class="product-card__prices prices">
+    <!-- <div class="product-card__prices prices">
       <strong class="prices__value">
         <% if (opt.item.available && opt.item.visible && _.ecomUtils.inStock(opt.item)) { %>
           <%= _.ecomUtils.formatMoney(itemData.price) %>
@@ -71,14 +71,18 @@ if (imgObj) {
           --
         <% } %>
       </strong>
-    </div>
+    </div> -->
 
-    <!-- Customize add to cart button content:
+    
     <div data-slot="buy-button-content">
-      <i class="fas fa-shopping-bag mr-1"></i>
-      {{ _.dictionary('buy') }}
+      <span class="d-none d-md-inline-block">Colocar na bolsa </span>
+      <% if (opt.item.available && opt.item.visible && _.ecomUtils.inStock(opt.item)) { %>        
+        <span class="d-none d-md-inline-block"><%= _.ecomUtils.formatMoney(itemData.price) %></span>
+      <% } else { %>
+        <span class="d-none d-md-inline-block">--</span>
+      <% } %>
     </div>
-    -->
+   
 
     <div class="spinner-border spinner-border-sm fade" role="status">
       <span class="sr-only">Loading...</span>

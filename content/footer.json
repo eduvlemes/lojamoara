@@ -1,11 +1,31 @@
 {
   "description": {
-    "title": "",
-    "text": ""
+    "title": "Nós também mandamos emails.",
+    "text": "Receba emails com as novidades da Moara que temos certeza que você vai amar, incluindo produtos, lançamentos e eventos. "
+  },
+  "stores": {
+    "list": [
+      {
+        "title":"Moara Cassol Centerlar",
+        "text": "1º piso<br>Av. Sertório, 8000<br>Sarandi - POA<br><br>51 3350 9555<br><br>Horário de funcionamento:<br>Segunda a sexta do 12h às 19h"        
+      },
+      {
+        "title":"Moara Cassol Centerlar",
+        "text": "1º piso<br>Av. Sertório, 8000<br>Sarandi - POA<br><br>51 3350 9555<br><br>Horário de funcionamento:<br>Segunda a sexta do 12h às 19h"        
+      },
+      {
+        "title":"Moara Cassol Centerlar",
+        "text": "1º piso<br>Av. Sertório, 8000<br>Sarandi - POA<br><br>51 3350 9555<br><br>Horário de funcionamento:<br>Segunda a sexta do 12h às 19h"        
+      },
+      {
+        "title":"Moara Cassol Centerlar",
+        "text": "1º piso<br>Av. Sertório, 8000<br>Sarandi - POA<br><br>51 3350 9555<br><br>Horário de funcionamento:<br>Segunda a sexta do 12h às 19h"        
+      }
+    ]
   },
   "links_1": {
     "list_pages": true,
-    "title": "Páginas",
+    "title": "Sobre Moara",
     "list": []
   },
   "links_2": {
@@ -13,8 +33,26 @@
     "title": "Categorias",
     "list": []
   },
+  "links_3": {
+    "list_pages": true,
+    "title": "Sobre Moara",
+    "list": [
+      {
+        "text": "Política de Privacidade",
+        "url": "/pages/como-comprar"
+      },
+      {
+        "text": "Termos de Serviço",
+        "url": "/pages/como-comprar"
+      },
+      {
+        "text": "Termos de Uso",
+        "url": "/pages/como-comprar"
+      }
+    ]
+  },
   "contacts": {
-    "title": "Contatos",
+    "title": "Fale com a gente!",
     "phone_wpp": true,
     "socials": true,
     "email": true,
@@ -31,12 +69,12 @@
     "visa": true,
     "boleto": true,
     "aura": false,
-    "banrisul": true,
+    "banrisul": false,
     "elo": true,
-    "hipercard": true,
+    "hipercard": false,
     "hsbc": false,
     "bradesco": true,
-    "santander": true,
+    "santander": false,
     "mastercard": true,
     "citibank": false,
     "mais": false,
