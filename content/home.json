@@ -3,26 +3,13 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "responsive-banner",
-      "img": "/img/uploads/imagem_15.png"
-    },
-    {
-      "type": "responsive-banner",
-      "img": "/img/uploads/imagem_6.png"
-    },
-    {
-      "type": "responsive-banner",
-      "img": "/img/uploads/imagem_5.png"
-    },
-    {
       "type": "collection-shelf",
       "shuffle": true,
-      "collection_id": "5f77550b7430f92180f9450a",
-      "sort": "lowest_price",
+      "sort": "news",
       "title": "Queridinhos",
       "headless": false,
-      "limit": 5
-    },
+      "limit": 6
+    },  
     {
       "type": "collection-shelf",
       "shuffle": true,
@@ -30,7 +17,22 @@
       "title": "Acabaram de chegar",
       "headless": false,
       "limit": 5
+    },  
+    {
+      "type": "custom-html",
+      "html": "<div class='divider'><div class='container'><span>Moara é cuidado e amor próprio em cada detalhe</span></div></div>"
+    },
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/imagem_6.png"
+    },
+    {
+      "type": "custom-html",
+      "html": "<div class='instagram-block'><h4 class='products-carousel__title'> <span>Acompanhe as novidades</span> </h4> <div id='instafeed'> </div></div><script src='/assets/instafeed.min.js'></script>"
+    },
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/imagem_5.png"
     }
-    
   ]
 }

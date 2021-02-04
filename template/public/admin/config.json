@@ -21,13 +21,18 @@
                   "summary" : "",
                   "fields" : [
                     {
-                      "label": "Texto",
-                      "name": "text",
+                      "label": "Nome da categoria para exibição",
+                      "name": "title",
                       "widget": "string"
                     },
                     {
-                      "label": "URL de exibição",
+                      "label": "URL Banner Principal",
                       "name": "url",
+                      "widget": "string"
+                    },
+                    {
+                      "label": "URL Banner Secundário",
+                      "name": "url_s",
                       "widget": "string"
                     },
                     {

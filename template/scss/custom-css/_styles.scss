@@ -212,7 +212,7 @@ body{font-family:"Roboto"}
 .apx .product-card{padding:10px;}
 
 .apx .product-card__pictures{
-    margin: -10px -10px 10px -10px;
+    margin: -10px -15px 10px 0px;
 }
 
 .apx .products-carousel__title{padding-left:0;padding-bottom:5px;}
@@ -311,3 +311,44 @@ body{font-family:"Roboto"}
 .apx .minicart__aside .prices__installments *{font-weight:normal}
 .apx .minicart__summary{align-items:flex-start;color:#000;font-size:18px;}
 .apx .cart-item .close{color:#000}
+
+#page-home .withBanner{margin-bottom:-4rem;}
+.withBanner{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto auto auto;
+    display: grid;
+}
+.withBanner > li:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.withBanner > li{margin:15px;}
+
+.apx .product-card__pictures,
+.apx .product-card__pictures img{
+    height: 417px;
+    max-height: unset;
+    max-width: unset;
+    object-fit: cover;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    position: relative;
+}
+
+.apx-product_home_list.normal>.apx-product_home_list_item{    max-width: calc(20% - 20px);}
+
+.apx .break-page{
+    background: #ffebe4;
+    margin: -3rem 0rem -1rem 0!important;
+}
+
+.apx .break-page span{display:block;font-size:50px;text-align:center;font-weight:300;}
+
+.instafeed-container{margin:-4rem 0 -3rem 0;}
+
+#instafeed{display:flex;margin:0 -15px;}
+#instafeed a{background:#ccc;flex:0 0 calc(25% - 30px);height:30px;margin: 5px 15px 0 15px;}
+#instafeed .instagram_gallery a{transition:all .2s}
+#instafeed .instagram_gallery a:nth-child(n+7){display:none;}
+#instafeed .instagram_gallery a:hover{opacity:.6}
+#instafeed .instagram_gallery a img{max-width:100%;}

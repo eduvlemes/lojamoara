@@ -2,11 +2,12 @@
   "list": [
     {
       "item": {
-        "text": "homepage",
+        "title": "home",
+        "url": "/",
+        "url_s": "/",
         "image_d": "/img/uploads/imagem_15.png",
         "image_m": "/img/uploads/imagem_9.png",
-        "image_s_d": "/img/uploads/imagem_8.png",
-        "url": "/",
+        "image_s_d": "/img/uploads/imagem_8.png",        
         "image_s_m": "/img/uploads/imagem_8.png"
       }
     }

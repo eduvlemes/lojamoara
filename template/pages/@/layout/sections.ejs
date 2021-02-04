@@ -1,6 +1,37 @@
 <article id="content" class="page page--<%= _.pageName %>">
   <div class="sections pb-1 pb-sm-2 pb-lg-4">
     <%
+    const apx = _.cms('moara_banners') || {}
+    var item
+    if (apx.list){ 
+      const item_ = apx.list.find(bn => bn.item.title == _.pageName)
+      item = item_.item
+      if(item){
+        
+    %>
+        <div class="responsive-baner my-3 my-lg-4">
+          <div class="container">
+            <div class="banner">
+              <a
+                href="<%= item.url || 'javascript:;' %>"
+              >
+                <picture
+                    class="lozad fade img-fluid"
+                    data-iesrc="<%= item.image_d.replace('.webp', '.png') %>"
+                >
+                  <source srcset="<%= item.image_d.replace('.webp', '.png') %>" media="(min-width: 576px)">
+                  <source srcset="<%= item.image_m.replace('.webp', '.png') %>" media="(min-width: 100px)">
+                  <img src="<%= item.image_d.replace('.webp', '.png') %>">                  
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>    
+       <%
+      }
+    } 
+    
+
     // load page sections and render each one
     const { sections } = _.state
     if (Array.isArray(sections)) {
@@ -14,5 +45,9 @@
       }
     }
     %>
+
+    <script>
+      var apx_bannersPage = <%- JSON.stringify(item) %>
+    </script>   
   </div>
 </article>

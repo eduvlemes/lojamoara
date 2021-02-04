@@ -18,6 +18,7 @@ if (imgObj) {
 %>
 
 <article class="product-item" data-product="<%= JSON.stringify(itemData) %>">
+  <%= itemData.meta_description %>
   <div
     class="product-card"
     data-product-id="<%= itemData._id %>"
@@ -35,6 +36,7 @@ if (imgObj) {
       class="product-card__link"
       title="<%= itemData.name %>"
     >
+    
       <!-- Custom code on product card top wrapped by link:
       <span data-slot="header">
       </span>
