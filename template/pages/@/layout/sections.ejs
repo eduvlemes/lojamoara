@@ -2,26 +2,26 @@
   <div class="sections pb-1 pb-sm-2 pb-lg-4">
     <%
     const apx = _.cms('moara_banners') || {}
-    let item = {}
+    var item___ = {}
     if (apx && apx.list.length > 0){ 
       const item_ = apx.list.find(bn => bn.item.title == _.pageName)
-      item = item_.item
-      if(item){
+      item___ = item_.item
+      if(item___){
         
     %>
         <div class="responsive-baner my-3 my-lg-4">
           <div class="container">
             <div class="banner">
               <a
-                href="<%= item.url || 'javascript:;' %>"
+                href="<%= item___.url || 'javascript:;' %>"
               >
                 <picture
                     class="lozad fade img-fluid"
-                    data-iesrc="<%= item.image_d.replace('.webp', '.png') %>"
+                    data-iesrc="<%= item___.image_d.replace('.webp', '.png') %>"
                 >
-                  <source srcset="<%= item.image_d.replace('.webp', '.png') %>" media="(min-width: 576px)">
-                  <source srcset="<%= item.image_m.replace('.webp', '.png') %>" media="(min-width: 100px)">
-                  <img src="<%= item.image_d.replace('.webp', '.png') %>">                  
+                  <source srcset="<%= item___.image_d.replace('.webp', '.png') %>" media="(min-width: 576px)">
+                  <source srcset="<%= item___.image_m.replace('.webp', '.png') %>" media="(min-width: 100px)">
+                  <img src="<%= item___.image_d.replace('.webp', '.png') %>">                  
                 </picture>
               </a>
             </div>
@@ -44,10 +44,12 @@
         }
       }
     }
-    %>
     
+    if (apx && apx.list.length > 0){ 
+    %>    
     <script>
-      var apx_bannersPage = <%- JSON.stringify(item) %>
+      var apx_bannersPage = <%- JSON.stringify(item___) %>
     </script>   
+    <% } %>
   </div>
 </article>
