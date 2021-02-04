@@ -1,10 +1,12 @@
 // Add your custom JavaScript for storefront pages here.
 
-$(document).ready(function(){
+$(window).resize(function(){
     let w = $('.product-card__pictures').first().innerWidth();
     let h = 1.4;
     console.log((h*w) + 'px');
-    $('.apx .product-card__pictures').css('height', (h*w) + 'px');
+    $('.apx .product-card__pictures').css('height', (h*w) + 'px');    
+});
+$(document).ready(function(){    
     $('.apx-product_home_list').addClass('normal');
     if(apx_bannersPage && $('.sections>.collection-shelf:nth-child(2) .apx-product_home_list').length > 0){        
         const list = '.sections>.collection-shelf:nth-child(2) .apx-product_home_list';

@@ -356,3 +356,9 @@ body{font-family:"Agrandir"}
 #instafeed .instagram_gallery a img{max-width:100%;}
 
 .apx .product-item{font-family:'Roboto'}
+
+
+@media(max-width:1360px){
+    .apx .product-card__buy>button{font-size:14px;line-height:50px;}
+    .apx .product-card .product-card__name{font-size:16px;}
+}
