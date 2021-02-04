@@ -2,8 +2,8 @@
   <div class="sections pb-1 pb-sm-2 pb-lg-4">
     <%
     const apx = _.cms('moara_banners') || {}
-    var item
-    if (apx.list){ 
+    var item = {}
+    if (apx.list.length > 0){ 
       const item_ = apx.list.find(bn => bn.item.title == _.pageName)
       item = item_.item
       if(item){
@@ -45,7 +45,7 @@
       }
     }
     %>
-
+    
     <script>
       var apx_bannersPage = <%- JSON.stringify(item) %>
     </script>   
