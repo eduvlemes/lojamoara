@@ -3,7 +3,7 @@
     <%
     const apx = _.cms('moara_banners') || {}
     let item = {}
-    if (apx.list.length > 0){ 
+    if (apx && apx.list.length > 0){ 
       const item_ = apx.list.find(bn => bn.item.title == _.pageName)
       item = item_.item
       if(item){

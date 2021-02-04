@@ -1,8 +1,9 @@
 // Add your custom CSS here.
-// @font-face {
-//     font-family: "Agrandir";
-//     src: url("/fonts/Agrandir-Regular.otf") format("opentype");
-// }
+@font-face {
+    font-family: "Agrandir";
+    src: url("/fonts/Agrandir-Variable.ttf") format("truetype");
+}
+
 // @font-face {
 //     font-family: "Agrandir";
 //     src: url("/fonts/Agrandir-TextBold.otf") format("opentype");
@@ -13,10 +14,11 @@
 //     src: url("/fonts/Agrandir-Regular.otf") format("opentype");
 // }
 
-body{font-family:"Roboto"}
+body{font-family:"Agrandir"}
 
 .apx header{background:#fff;border:0}
 
+.apx .header__container{padding-bottom:10px;}
 .apx .top-bar .top-bar__countdown{
     background: #ff9e98;
     font-size: 16px;
@@ -33,7 +35,7 @@ body{font-family:"Roboto"}
     font-weight:normal;
     font-size:16px;
     margin: 0 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .apx .header__logo{max-height:26px}
@@ -342,7 +344,7 @@ body{font-family:"Roboto"}
     margin: -3rem 0rem -1rem 0!important;
 }
 
-.apx .break-page span{display:block;font-size:50px;text-align:center;font-weight:300;}
+.apx .break-page span{display:block;font-size:50px;text-align:center;font-weight:300;letter-spacing: 0.5px;font-weight:300}
 
 .instafeed-container{margin:-4rem 0 -3rem 0;}
 
@@ -352,3 +354,5 @@ body{font-family:"Roboto"}
 #instafeed .instagram_gallery a:nth-child(n+7){display:none;}
 #instafeed .instagram_gallery a:hover{opacity:.6}
 #instafeed .instagram_gallery a img{max-width:100%;}
+
+.apx .product-item{font-family:'Roboto'}
