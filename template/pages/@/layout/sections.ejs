@@ -5,9 +5,8 @@
     var item___ = {}
     if (apx && apx.list.length > 0){ 
       const item_ = apx.list.find(bn => bn.item.title == _.pageName)
-      item___ = item_.item == undefined ? false : item_.item
-      if(item___){
-        
+      if(item_ != undefined){
+        item___ = item_.item  
     %>
         <div class="responsive-baner my-3 my-lg-4">
           <div class="container">

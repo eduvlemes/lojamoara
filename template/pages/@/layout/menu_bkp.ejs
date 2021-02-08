@@ -34,7 +34,7 @@ if (mainCategories) {
 }
 %>
 
-<aside id="menu" class="menu shadow csb">
+<aside id="menu" class="menu shadow">
   <nav class="accordion" id="accordion-menu">
     <button
       class="menu__btn menu__btn--close btn"
@@ -83,11 +83,7 @@ if (mainCategories) {
               <i class="fas fa-arrow-left"></i>
             </button>
           <% } %>
-          <% if (category && category.slug) { %>
-            <a href="/<%= category.slug %>" class="menu__link">
-              <%= category.name %>
-            </a>
-          <% } %>
+
           <div class="menu__list">
             <% categoryParents[slug].forEach(subcategory => { %>
               <% const hasSubmenu = Array.isArray(categoryParents[subcategory.slug]) %>
@@ -121,9 +117,59 @@ if (mainCategories) {
             <% }) %>
           </div>
 
-          
+          <% if (category && category.slug) { %>
+            <a href="/<%= category.slug %>" class="menu__link">
+              <%= _.dictionary('seeAll$1Category').replace('$1', category.name) %>
+            </a>
+          <% } %>
         </div>
       <% } %>
     <% } %>
   </nav>
+
+  <footer class="menu__footer">
+    <% if (menu.phone_wpp) { %>
+      <div class="menu__phone">
+        <% if (contacts.whatsapp) { %>
+          <a
+            href="javascript:;"
+            target="_blank"
+            rel="noopener"
+            class="whatsapp-link"
+            data-tel="<%= contacts.whatsapp.replace(/\D/g, '') %>"
+          >
+            <i class="fab fa-whatsapp mr-1"></i>
+            <%= contacts.whatsapp %>
+          </a>
+        <% } else if (contacts.phone) { %>
+          <a
+            href="tel:+<%= contacts.phone.replace(/\D/g, '') %>"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fas fa-phone mr-1"></i>
+            <%= contacts.phone %>
+          </a>
+        <% } %>
+      </div>
+    <% } %>
+
+    <% if (menu.socials) { %>
+      <div class="menu__social">
+        <% networksWithColors.forEach(([network, color]) => { %>
+          <% if (contacts[network]) { %>
+            <a
+              href="<%= contacts[network] %>"
+              target="_blank"
+              rel="noopener"
+              aria-label="<%= network %>"
+              style="color: <%= color %>"
+            >
+              <i class="fab fa-<%= network %>"></i>
+            </a>
+          <% } %>
+        <% }) %>
+      </div>
+    <% } %>
+  </footer>
 </aside>
