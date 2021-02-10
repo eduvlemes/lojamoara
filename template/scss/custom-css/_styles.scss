@@ -3,6 +3,10 @@
     font-family: "Agrandir";
     src: url("/fonts/Agrandir-Variable.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Ogg";
+    src: url("/fonts/Ogg-Roman.otf") format("opentype");
+}
 
 // @font-face {
 //     font-family: "Agrandir";
@@ -344,7 +348,7 @@ body{font-family:"Agrandir"}
     margin: -3rem 0rem -1rem 0!important;
 }
 
-.apx .break-page span{display:block;font-size:50px;text-align:center;font-weight:300;letter-spacing: 0.5px;font-weight:300}
+.apx .break-page span{font-family:"Ogg";display:block;font-size:50px;text-align:center;font-weight:300;letter-spacing: 0.5px;font-weight:300}
 
 .instafeed-container{margin:-4rem 0 -3rem 0;}
 
