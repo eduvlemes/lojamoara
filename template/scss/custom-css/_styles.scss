@@ -100,10 +100,11 @@ body{font-family:"Agrandir"}
 .img-responsive{max-width:100%;}
 
 .apx .footer .bg-pink h4{
-    font-size: 34px;
+    font-size: 35px;
     color: #000;
-    font-weight: normal;
-    margin: 0 0 2rem 0;
+    font-weight: 400;
+    margin: 0 0 2rem;
+    font-family: "Ogg";
 }
 .apx .footer .bg-pink b{color:#000}
 .apx .footer .bg-pink p{font-size:16px;color:#000000;}
@@ -162,6 +163,7 @@ body{font-family:"Agrandir"}
     font-size:16px;
     line-height:26px;
 }
+.apx .footer__store_info strong {font-weight:normal}
 .apx .footer__store_info p{font-weight:300;margin-bottom:2rem;}
 
 .apx #content > .sections > .responsive-baner:first-child{margin-top:0!important}
@@ -184,7 +186,7 @@ body{font-family:"Agrandir"}
     font-weight: 600;
     line-height: 60px;
     padding: 0 15px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .apx .product-card:hover{box-shadow:unset;}
@@ -345,7 +347,7 @@ body{font-family:"Agrandir"}
 
 .apx .break-page{
     background: #ffebe4;
-    margin: -3rem 0rem -1rem 0!important;
+    margin: -3rem 0rem 2rem 0!important;
 }
 
 .apx .break-page span{font-family:"Ogg";display:block;font-size:50px;text-align:center;font-weight:300;letter-spacing: 0.5px;font-weight:300}
@@ -416,10 +418,8 @@ background: #888;
 .csb::-webkit-scrollbar-thumb:hover {
 background: #555;
 }
-@media(min-width:990px){
-  
-}
 
+.withBanner>li:first-child{max-height:0px;}
 .withBanner .banner,
 .withBanner .banner a,
 .withBanner .banner picture{height:100%;}
@@ -434,6 +434,32 @@ background: #555;
     min-width:100%;
 }
 
+.glide__arrows{display:none!important;}
+.glide__bullet{
+    width: 10px;
+    height: 10px;
+}
+
+#content > .sections > .banner-slider:first-child{max-width: 100%;height:auto;max-height:auto!important;
+    --banner-aspect-ratio: 1!important;
+    --banner-aspect-ratio-mobile: 1!important;
+}
+@media(min-width:990px){
+    #content>.sections>.banner-slider:not(:first-child),
+    #content>.sections>.banner-slider:not(:first-child) img{max-width:1710px;width:100%!important;--banner-aspect-ratio:1!important;height:auto;}
+    .apx .footer .bg-pink b{font-weight:normal;}
+
+    .apx .header__nav--full a:last-child:before{
+        content: "";
+        background-image: url(/img/petit.png);
+        height: 44px;
+        width: 34px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
+    .header__nav{margin-bottom:-15px;}
+}
 @media(max-width:1360px){
     .apx .product-card__buy>button{font-size:14px;line-height:50px;}
     .apx .product-card .product-card__name{font-size:16px;}

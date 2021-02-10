@@ -35,7 +35,7 @@ if (opt.img) {
       aria-label="<%= opt.alt %>"
     >
       <picture
-        <% if (opt.sync_load) { %>
+        <% if (opt.sync_load || 1 == 1)  { %>
           class="img-fluid"
         <% } else { %>
           class="lozad fade img-fluid"
@@ -56,7 +56,7 @@ if (opt.img) {
             <% } %>
           >
         <% }) %>
-        <% if (opt.sync_load) { %>
+        <% if (opt.sync_load || 1 == 1) { %>
           <img src="<%= opt.img.replace('.webp', '.png') %>" alt="<%= opt.alt %>">
         <% } %>
       </picture>

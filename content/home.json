@@ -69,6 +69,15 @@
       "html": "<div class='divider'><div class='container'><span>Moara é cuidado e amor próprio em cada detalhe</span></div></div>"
     },
     {
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "slides": [
+        {
+          "img": "/img/uploads/BN_10022021 (18).png"
+        }
+      ]
+    },
+    {
       "type": "custom-html",
       "html": "<div class='instagram-block'><h4 class='products-carousel__title'> <span>Acompanhe as novidades</span> </h4> <div id='instafeed'> </div></div><script src='/assets/instafeed.min.js'></script>"
     },
@@ -77,11 +86,19 @@
       "autoplay": 9000,
       "slides": [
         {
-          "start": "2021-02-10T17:45:05.086Z",
-          "end": "2021-02-10T17:45:05.109Z",
-          "img": "/img/uploads/__2.png"
+          "img": "/img/uploads/BN_10022021 (17).png"
+        },
+        {
+          "img": "/img/uploads/BN_10022021 (21).png"
+        },
+        {
+          "img": "/img/uploads/BN_10022021 (20).png"
+        },
+        {
+          "img": "/img/uploads/BN_10022021 (19).png"
         }
       ]
     }
+    
   ]
 }

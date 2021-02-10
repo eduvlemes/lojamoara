@@ -79,7 +79,7 @@ if (imgObj) {
     <div data-slot="buy-button-content">
       <span class="d-inline-block">Colocar na bolsa </span>
       <% if (opt.item.available && opt.item.visible && _.ecomUtils.inStock(opt.item)) { %>        
-        <span class="d-none d-md-inline-block"><%= _.ecomUtils.formatMoney(itemData.price) %></span>
+        <span class="d-none d-md-inline-block">R$ <%= Math.trunc(itemData.price) %></span>
       <% } else { %>
         <span class="d-none d-md-inline-block">--</span>
       <% } %>
