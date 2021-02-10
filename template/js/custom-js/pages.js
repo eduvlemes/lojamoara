@@ -4,7 +4,7 @@ setTimeout(function(){ajustaImagens();}, 1000);
 function ajustaImagens(){
     let w = $('.product-card__pictures').first().innerWidth();
     let h = 1.4;
-    $('.apx .product-card__pictures').each(function(){
+    $('.product-card__pictures').each(function(){
         $(this).css('height', (h*w) + 'px');   
         $(this).find('img').css('height', (h*w) + 'px');   
     }) 
@@ -21,7 +21,7 @@ $(document).ready(function(){
         $('.sliderLateral').appendTo('#bannerLateral');      
         
         window.dispatchEvent(new Event('resize'));        
-        
+        ajustaImagens();
     }
 
     $('.custom-html .divider').closest('section').addClass('break-page');

@@ -73,7 +73,8 @@
       "autoplay": 9000,
       "slides": [
         {
-          "img": "/img/uploads/BN_10022021 (18).png"
+          "img": "/img/uploads/BN_10022021 (18).png",
+          "mobile_img": "/img/uploads/BN_10022021 (12).png"
         }
       ]
     },
@@ -86,16 +87,20 @@
       "autoplay": 9000,
       "slides": [
         {
-          "img": "/img/uploads/BN_10022021 (17).png"
+          "img": "/img/uploads/BN_10022021 (17).png",
+          "mobile_img": "/img/uploads/BN_10022021 (16).png"
         },
         {
-          "img": "/img/uploads/BN_10022021 (21).png"
+          "img": "/img/uploads/BN_10022021 (21).png",
+          "mobile_img": "/img/uploads/BN_10022021 (13).png"
         },
         {
-          "img": "/img/uploads/BN_10022021 (20).png"
+          "img": "/img/uploads/BN_10022021 (20).png",
+          "mobile_img": "/img/uploads/BN_10022021 (14).png"
         },
         {
-          "img": "/img/uploads/BN_10022021 (19).png"
+          "img": "/img/uploads/BN_10022021 (19).png",
+          "mobile_img": "/img/uploads/BN_10022021 (15).png"
         }
       ]
     }
