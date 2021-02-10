@@ -3,13 +3,37 @@
   "meta_description": "",
   "sections": [
     {
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "slides": [
+        {
+          "start": "2021-02-10T17:34:37.504Z",
+          "end": "2021-02-10T17:34:37.527Z",
+          "img": "/img/uploads/bn_10022021-1-.png",
+          "mobile_img": "/img/uploads/bn_10022021-11-.png"
+        },
+        {
+          "start": "2021-02-10T17:42:46.876Z",
+          "end": "2021-02-10T17:42:46.892Z",
+          "img": "/img/uploads/bn_10022021-7-.png",
+          "mobile_img": "/img/uploads/bn_10022021-10-.png"
+        },
+        {
+          "start": "2021-02-10T17:43:15.223Z",
+          "end": "2021-02-10T17:43:15.285Z",
+          "img": "/img/uploads/bn_10022021-6-.png",
+          "mobile_img": "/img/uploads/bn_10022021-9-.png"
+        }
+      ]
+    },
+    {
       "type": "collection-shelf",
       "shuffle": true,
       "sort": "news",
       "title": "Queridinhos",
       "headless": false,
       "limit": 6
-    },  
+    },
     {
       "type": "collection-shelf",
       "shuffle": true,
@@ -17,22 +41,25 @@
       "title": "Acabaram de chegar",
       "headless": false,
       "limit": 5
-    },  
+    },
     {
       "type": "custom-html",
       "html": "<div class='divider'><div class='container'><span>Moara é cuidado e amor próprio em cada detalhe</span></div></div>"
-    },
-    {
-      "type": "responsive-banner",
-      "img": "/img/uploads/imagem_6.png"
     },
     {
       "type": "custom-html",
       "html": "<div class='instagram-block'><h4 class='products-carousel__title'> <span>Acompanhe as novidades</span> </h4> <div id='instafeed'> </div></div><script src='/assets/instafeed.min.js'></script>"
     },
     {
-      "type": "responsive-banner",
-      "img": "/img/uploads/imagem_5.png"
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "slides": [
+        {
+          "start": "2021-02-10T17:45:05.086Z",
+          "end": "2021-02-10T17:45:05.109Z",
+          "img": "/img/uploads/__2.png"
+        }
+      ]
     }
   ]
 }
