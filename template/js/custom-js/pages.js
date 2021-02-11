@@ -1,11 +1,14 @@
 // Add your custom JavaScript for storefront pages here.
-setTimeout(function(){ajustaImagens();}, 1000);
-
+setTimeout(function(){ajustaImagens();}, 2000);
+window.onscroll = function (e) {  
+    ajustaImagens();
+} 
 function ajustaImagens(){
-    let w = $('.product-card__pictures').first().innerWidth();
+    let w = $('#content .product-card__pictures').first().innerWidth();
     let h = 1.4;
     $('.product-card__pictures').each(function(){
         $(this).css('height', (h*w) + 'px');   
+        $(this).find('picture').css('height', (h*w) + 'px');   
         $(this).find('img').css('height', (h*w) + 'px');   
     }) 
 };
@@ -17,18 +20,28 @@ $(document).ready(function(){
         $(list).addClass('withBanner');
         $(list).removeClass('normal');
         $('<li id="bannerLateral"></li>').prependTo(list);
-        $('.sliderLateral').appendTo('#bannerLateral');      
-        
+        $('.sliderLateral').appendTo('#bannerLateral');   
         window.dispatchEvent(new Event('resize'));        
         ajustaImagens();
     }
+    if(apx_bannersPage){        
+        console.log('teste');
+        const list = '#content .search-engine__retail > .row';
+        $(list).removeClass('normal');
+        $('<div id="bannerLateral"><div class="banner"><a href="'+ apx_bannersPage.url_s + '" > <picture class="img-fluid" data-iesrc="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') + '" > <source srcset="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') +'" media="(min-width: 576px)"> <source srcset="'+ apx_bannersPage.image_s_m.replace('.webp', '.png') +'" media="(min-width: 100px)"> <img src="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') +'"> </picture> </a></div></div>').prependTo(list);
+        $(list).addClass('withBanner');
+    }
+
+    $('#mobile-search-btn').click(function(){
+        $('#search-bar').removeClass('show');
+    });
 
     $('.custom-html .divider').closest('section').addClass('break-page');
 
     if($('#instafeed').length){
         $('#instafeed').closest('.custom-html').addClass('instafeed-container');
         var obj = new InstagramFeed({
-            'username': 'ecomclub',
+            'username': 'moara.oficial',
             'container': document.getElementById("instafeed"),
             'display_profile': false,
             'display_biography': false,
