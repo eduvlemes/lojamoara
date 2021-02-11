@@ -1,7 +1,7 @@
 {
   "domain": "alpix-moara.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#c2708e",
+  "primary_color": "#ff9e98",
   "theme": {
     "bootswatch": "_",
     "custom": "_"
@@ -15,7 +15,7 @@
   "mini_logo": "",
   "favicon": "/img/uploads/favicon.png",
   "country_code": "BR",
-  "secondary_color": "#e675a8",
+  "secondary_color": "#000000",
   "icon": "/img/uploads/logonovo.png",
   "store_id": 1147,
   "description": "Somos uma loja física e virtual, que através de produtos de qualidade e com preços acessíveis tem como objetivo elevar a auto estima, estimular o auto cuidado e o amor próprio.",
