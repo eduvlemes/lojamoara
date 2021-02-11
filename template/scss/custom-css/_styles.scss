@@ -365,7 +365,7 @@ body{font-family:"Agrandir"}
 
 }
 .instafeed-container > .container{
-    padding: 0 0 5px 0px;
+    padding: 0 0 5px 0px!important;
     margin-top: -15px;
 }
 #instafeed .instagram_gallery a{transition:all .2s}
@@ -594,4 +594,12 @@ background: #555;
 
     .header__search > input,
     .header__search > button{display:none!important;}
+
+    .instafeed-container{padding:15px 15px 0 15px!important}
+    .apx .products-carousel__title{padding:0 0 15px 0;}
+    .apx .products-carousel__title>span{text-align:center;}
+    #instafeed .instagram_gallery a:not(:first-child){display:none;}
+    #instafeed .instagram_gallery a{flex:0 0 100%;margin:0;}
+    .instafeed-container{margin-bottom:15px;}
+    .instafeed-container .html-clearfix{margin-bottom:0}
 }
