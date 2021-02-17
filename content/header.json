@@ -9,12 +9,12 @@
     "socials": false
   },
   "categories_list": {
-    "featured":  [
-      "/?Compre Tudo",
-      "/?Acessórios",
-      "/?MakeUp",
-      "/?Brincos",
-      "/?Petit Moara"
+    "featured": [
+      "/produtos-populares?Lançamentos",
+      "/u_10009?Acessórios ",
+      "/moara-makeup?Moara Makeup ",
+      "/brincos?Brincos",
+      "/petit-moara?Petit Moara"
     ],
     "random": 0,
     "full_width": true
