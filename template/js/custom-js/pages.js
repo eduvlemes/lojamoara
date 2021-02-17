@@ -24,8 +24,7 @@ $(document).ready(function(){
         window.dispatchEvent(new Event('resize'));        
         ajustaImagens();
     }
-    if(apx_bannersPage){        
-        console.log('teste');
+    if(apx_bannersPage && $('#page-home').length == 0){        
         const list = '#content .search-engine__retail > .row';
         $(list).removeClass('normal');
         $('<div id="bannerLateral"><div class="banner"><a href="'+ apx_bannersPage.url_s + '" > <picture class="img-fluid" data-iesrc="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') + '" > <source srcset="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') +'" media="(min-width: 576px)"> <source srcset="'+ apx_bannersPage.image_s_m.replace('.webp', '.png') +'" media="(min-width: 100px)"> <img src="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') +'"> </picture> </a></div></div>').prependTo(list);
@@ -36,7 +35,7 @@ $(document).ready(function(){
         $('#search-bar').removeClass('show');
     });
 
-    $('.custom-html .divider').closest('section').addClass('break-page');
+    $('.divider').closest('section').addClass('break-page');
 
     if($('#instafeed').length){
         $('#instafeed').closest('.custom-html').addClass('instafeed-container');
