@@ -476,6 +476,22 @@ background: #555;
         margin: 0 10px 0 0;
     }
     .header__nav{margin-bottom:-15px;}
+
+    .page--categories .search-engine__retail > .row .product-item{margin-bottom:30px;}
+
+    .withBanner > div:not(#bannerLateral){
+        margin: 0;
+        padding: 10px;
+    }
+    .listNotBanner > div:not(#bannerLateral){
+        margin: 0;
+        padding: 10px;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    
+
 }
 @media(max-width:1360px){
     .apx .product-card__buy>button{font-size:14px;line-height:50px;}
@@ -483,6 +499,16 @@ background: #555;
 }
 
 @media(max-width:990px){
+    .listNotBanner{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .listNotBanner > div:not(#bannerLateral){
+        margin: 0;
+        padding: 5px;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
     .apx .header__container{padding:7px;}
     .apx .header__logo{height:20px;}
 

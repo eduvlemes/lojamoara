@@ -24,11 +24,15 @@ $(document).ready(function(){
         window.dispatchEvent(new Event('resize'));        
         ajustaImagens();
     }
-    if(apx_bannersPage && $('#page-home').length == 0){        
+    if(apx_bannersPage && $('#page-categories').length == 1){       
         const list = '#content .search-engine__retail > .row';
-        $(list).removeClass('normal');
-        $('<div id="bannerLateral"><div class="banner"><a href="'+ apx_bannersPage.url_s + '" > <picture class="img-fluid" data-iesrc="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') + '" > <source srcset="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') +'" media="(min-width: 576px)"> <source srcset="'+ apx_bannersPage.image_s_m.replace('.webp', '.png') +'" media="(min-width: 100px)"> <img src="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') +'"> </picture> </a></div></div>').prependTo(list);
-        $(list).addClass('withBanner');
+        if(apx_bannersPage.image_s_d != undefined){            
+            $(list).removeClass('normal');
+            $(list).addClass('withBanner');
+            $('<div id="bannerLateral"><div class="banner"><a href="'+ apx_bannersPage.url_s + '" > <picture class="img-fluid" data-iesrc="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') + '" > <source srcset="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') +'" media="(min-width: 576px)"> <source srcset="'+ apx_bannersPage.image_s_m.replace('.webp', '.png') +'" media="(min-width: 100px)"> <img src="'+ apx_bannersPage.image_s_d.replace('.webp', '.png') +'"> </picture> </a></div></div>').prependTo('.withBanner');        
+        }else{
+            $(list).addClass('listNotBanner');
+        }
     }
 
     $('#mobile-search-btn').click(function(){
