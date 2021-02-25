@@ -8,7 +8,7 @@
         "image_d": "/img/uploads/c4.png",
         "image_m": "/img/uploads/c16.png",
         "image_s_d": "/img/uploads/c3.png",
-        "image_s_m": ""                
+        "image_s_m": "/img/uploads/c3.png"
       }
     },
     {
@@ -19,8 +19,7 @@
         "image_d": "/img/uploads/c1.png",
         "image_m": "/img/uploads/c15.png",
         "image_s_d": "/img/uploads/c6.png",
-        "image_s_m": ""        
-
+        "image_s_m": "/img/uploads/__3.png"
       }
     },
     {
@@ -30,8 +29,8 @@
         "url_s": "/",
         "image_d": "/img/uploads/c2.png",
         "image_m": "/img/uploads/c14.png",
-        "image_s_d": "/img/uploads/c5.png",
-        "image_s_m": ""                        
+        "image_s_d": "/img/uploads/banner-moara-make.png",
+        "image_s_m": "/img/uploads/banner-moara-make.png"
       }
     },
     {
@@ -42,7 +41,7 @@
         "image_d": "/img/uploads/c7.png",
         "image_m": "/img/uploads/c13.png",
         "image_s_d": "/img/uploads/c8.png",
-        "image_s_m": ""                        
+        "image_s_m": "/img/uploads/__5.png"
       }
     },
     {
@@ -53,7 +52,7 @@
         "image_d": "/img/uploads/c4.png",
         "image_m": "/img/uploads/c16.png",
         "image_s_d": "/img/uploads/c3.png",
-        "image_s_m": ""                        
+        "image_s_m": "/img/uploads/__2.png"
       }
     },
     {
@@ -63,7 +62,8 @@
         "url_s": "/",
         "image_d": "/img/uploads/c9.png",
         "image_m": "/img/uploads/c17.png",
-        "image_s_m": ""                
+        "image_s_m": "/img/uploads/BN_10022021_(8).png",
+        "image_s_d": "/img/uploads/BN_10022021 (22).png"
       }
     }
   ]
