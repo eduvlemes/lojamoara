@@ -41,7 +41,7 @@ body{font-family:"Agrandir"}
     color: #000000;
     text-transform: uppercase;
     font-weight:normal;
-    font-size:16px;
+    font-size:15px;
     margin: 0 1rem;
     font-weight: 400;
 }
@@ -181,6 +181,8 @@ body{font-family:"Agrandir"}
     display:flex;
     justify-content:space-between
 }
+.apx .product-card__buy > button > span > span:first-child{font-size:16px;}
+.apx .product-card__buy > button > span > span:last-child{font-size:20px;}
 
 .apx .product-card__buy > button{
     border: 1px solid #D9D9D9;
@@ -202,7 +204,7 @@ body{font-family:"Agrandir"}
 .apx .product-card .product-card__prices{display:none;}
 .apx .product-card a{text-decoration:none!important}
 .apx .product-card .product-card__name{
-    font-size:20px;
+    font-size:16px;
     font-weight:500;
     color:#000;
     letter-spacing: 0.2px;
@@ -356,7 +358,7 @@ body{font-family:"Agrandir"}
     margin: -3rem 0rem 2rem 0!important;
 }
 
-.apx .break-page span{font-family:"Ogg";display:block;font-size:50px;text-align:center;font-weight:300;letter-spacing: 0.5px;font-weight:300}
+.apx .break-page span{font-family:"Ogg";display:block;font-size:40px;text-align:center;font-weight:300;letter-spacing: 0.5px;font-weight:300}
 
 .instafeed-container{margin:0;}
  
@@ -395,12 +397,12 @@ aside#menu [data-parent="#accordion-menu"] .menu__list{
 
 aside#menu [data-parent="#accordion-menu"]  .menu__list a{
     color:#000;
-    font-size:16px;
+    font-size:15px;
     font-family:"Roboto";
     font-weight:400;
     border:0;
     background:transparent;
-    padding-bottom:0
+    padding-bottom:0;
 }
 aside#menu [data-parent="#accordion-menu"] > a{
     margin: 20px 0 0 0;
@@ -412,7 +414,7 @@ aside#menu #categories-nav .menu__list  a{
     color: #000;
     font-weight: 700;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 15px;
     background: transparent;
     border: 0;
 }
