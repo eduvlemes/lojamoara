@@ -1,22 +1,26 @@
 // Add your custom CSS here.
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @font-face {
     font-family: "Agrandir";
-    src: url("/fonts/Agrandir-Variable.ttf") format("truetype");
+    src: url("/fonts/Agrandir-Variable.ttf") format("truetype");    
+    
 }
 @font-face {
     font-family: "Ogg";
     src: url("/fonts/Ogg-Roman.otf") format("opentype");
 }
 
-// @font-face {
-//     font-family: "Agrandir";
-//     src: url("/fonts/Agrandir-TextBold.otf") format("opentype");
-//     font-weight:600;
-// }
-// @font-face {
-//     font-family: "Agrandir";
-//     src: url("/fonts/Agrandir-Regular.otf") format("opentype");
-// }
+@font-face {
+    font-family: "Agrandir";
+    src: url("/fonts/Agrandir-TextBold.otf") format("opentype");
+    font-weight:600;
+}
+@font-face {
+    font-family: "Agrandir";
+    src: url("/fonts/Agrandir-Regular.otf") format("opentype");
+    font-weight:300;
+}
 
 body{font-family:"Agrandir"}
 
@@ -232,6 +236,7 @@ body{font-family:"Agrandir"}
     text-align: left;
     display: block!important;
     padding: 0;
+    font-weight:400;
 }
 .apx .products-carousel__title:before{display:none;}
 

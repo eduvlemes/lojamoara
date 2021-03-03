@@ -41,6 +41,7 @@
         if ( _.pageName == "home" && i == 999){
           
         }else if (opt && opt.enabled !== false) {
+          console.log(opt.type)
           %>
           <%- await include(`@/sections/${opt.type}`, { _, opt }) %>
           <%
