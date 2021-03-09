@@ -38,22 +38,26 @@
                     {
                       "label": "Banner Principal (Desktop)",
                       "name": "image_d",
-                      "widget": "image"
+                      "widget": "image",
+                      "required" : false
                     },
                     {
                       "label": "Banner Principal (Mobile)",
                       "name": "image_m",
-                      "widget": "image"
+                      "widget": "image",
+                      "required" : false
                     },
                     {
                       "label": "Banner Secundário (Desktop)",
                       "name": "image_s_d",
-                      "widget": "image"
+                      "widget": "image",
+                      "required" : false
                     },
                     {
                       "label": "Banner Secundário (Mobile)",
                       "name": "image_s_m",
-                      "widget": "image"
+                      "widget": "image",
+                      "required" : false
                     }
                   ]
                 }

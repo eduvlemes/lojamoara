@@ -505,6 +505,12 @@ background: #555;
     .apx .product-card .product-card__name{font-size:16px;}
 }
 
+@media(min-width:990px) and (max-width:1500px){
+    .apx .product-card__buy>button>span>span:first-child{font-size:14px;}
+    .apx .product-card__buy>button>span>span:last-child{font-size:15px;}
+    .apx .product-card__buy>button{line-height:46px;}
+}
+
 @media(max-width:990px){
     .listNotBanner{
         margin-left: -5px;
