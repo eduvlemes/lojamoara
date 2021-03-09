@@ -4,12 +4,11 @@
     const apx = _.cms('moara_banners') || {}
     var item___ = {}
     var pageName =  _.route.path.replace(/\//g, '')
-    console.log(pageName)
     if (apx && apx.list.length > 0 && _.pageName != "home"){ 
       const item_ = apx.list.find(bn => bn.item.title == pageName)
       if(item_ != undefined){
         item___ = item_.item  
-        console.log(item___)
+        
     %>
         <div class="responsive-baner my-3 my-lg-4">
           <div class="container">
@@ -41,7 +40,7 @@
         if ( _.pageName == "home" && i == 999){
           
         }else if (opt && opt.enabled !== false) {
-          console.log(opt.type)
+          
           %>
           <%- await include(`@/sections/${opt.type}`, { _, opt }) %>
           <%

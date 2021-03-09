@@ -647,5 +647,39 @@ background: #555;
 
     #search-bar .product-card__pictures, #search-bar .product-card__pictures img{height:200px;}
 
-    .breadcrumb{}
+    .footer__links{
+        columns: 2;
+    }
+    .apx .product-card__buy>button>span>span:first-child{font-size:12px}
+
+    .withBanner>:first-child{max-height:100%;position: relative;}
+    .withBanner>:first-child .banner,
+    .withBanner>:first-child .banner-slider{
+        height: auto;
+        min-height: 100%;
+        position: relative;
+        width: 100%;
+    }    
+    .withBanner>:first-child .banner-slider .glide--slider{
+        height: 100%;
+        position: absolute;
+    }
+    .withBanner>:first-child .banner-slider .glide--slider .glide__slides,
+    .withBanner>:first-child .banner-slider .glide--slider .glide__slide,
+    .withBanner>:first-child .banner-slider .glide--slider .glide__track{
+        height:100%;
+    }
+    .withBanner>:first-child .banner > a{
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    #page-home .withBanner{margin-left:-3px;margin-right:-7px}
+    body:not(#page-home) .withBanner > *{
+        padding: 2.5px;
+        margin: 0!important;
+    }
+    body:not(#page-home) .withBanner{margin: -38px -8px 0 -3px;}
 }
