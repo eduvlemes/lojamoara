@@ -1,0 +1,73 @@
+{
+  "backend": {
+    "name": "git-gateway",
+    "branch": "master",
+    "identity_url": "https://gotrue.ecomplus.biz/1147/.netlify/identity",
+    "gateway_url": "https://gitgateway.ecomplus.biz/1147/.netlify/git"
+  },
+  "collections": [
+    {
+      "label" : "Moara",
+      "name": "moara",
+      "files": [
+        {
+          "name": "moara_banners",
+          "label": "Banners",
+          "file": "content/moara_banners.json",
+          "fields": [
+            {
+              "label":"Banners",
+              "name":"list",
+              "widget" : "list",
+              "fields" : [
+                {
+                  "label": "Item",
+                  "name": "item",
+                  "widget": "object",
+                  "summary" : "",
+                  "fields" : [
+                    {
+                      "label": "Nome da categoria para exibição",
+                      "name": "title",
+                      "widget": "string"
+                    },
+                    {
+                      "label": "URL Banner Principal",
+                      "name": "url",
+                      "widget": "string"
+                    },
+                    {
+                      "label": "URL Banner Secundário",
+                      "name": "url_s",
+                      "widget": "string"
+                    },
+                    {
+                      "label": "Banner Principal (Desktop)",
+                      "name": "image_d",
+                      "widget": "image"
+                    },
+                    {
+                      "label": "Banner Principal (Mobile)",
+                      "name": "image_m",
+                      "widget": "image"
+                    },
+                    {
+                      "label": "Banner Secundário (Desktop)",
+                      "name": "image_s_d",
+                      "widget": "image"
+                    },
+                    {
+                      "label": "Banner Secundário (Mobile)",
+                      "name": "image_s_m",
+                      "widget": "image"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
